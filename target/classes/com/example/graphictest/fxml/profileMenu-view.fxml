@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.graphictest.View.ProfileMenu"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <left>
+        <VBox fx:id="vBox" alignment="CENTER" maxWidth="80" maxHeight="100" prefWidth="200" spacing="10">
+
+        </VBox>
+    </left>
+
+    <center>
+        <VBox alignment="CENTER" maxWidth="200" maxHeight="100" prefWidth="200" spacing="10">
+
+            <Label prefHeight="23.0" prefWidth="54.0" text="Username"/>
+            <TextField fx:id="username" prefHeight="25.0" prefWidth="88.0" promptText="enter new username"/>
+            <Button fx:id="changeUsernameButton" onMouseClicked="#changeUsername" styleClass="primary-btn"
+                    text="change username"/>
+
+            <Label text="Password"/>
+            <TextField fx:id="password" prefHeight="25.0" prefWidth="162.0" promptText="enter new password"/>
+
+            <Button fx:id="changePasswordButton" onMouseClicked="#changePassword" styleClass="primary-btn"
+                    text="change password"/>
+            <Button fx:id="deleteAccountButton" onMouseClicked="#deleteAccount" styleClass="primary-btn"
+                    text="delete account"/>
+            <Button fx:id="logoutButton" onMouseClicked="#logout" styleClass="primary-btn" text="logout"/>
+
+            <Label fx:id="changeUsernameText"/>
+            <Label fx:id="changePasswordText"/>
+
+        </VBox>
+    </center>
+
+</BorderPane>
