@@ -98,7 +98,6 @@ public class GameController {
     public static void decreaseCupHeadHearts() {
         resetCupHeadLocation();
         cupHead.setHearts(cupHead.getHearts() - cupHead.getVulnerability());
-        System.out.println(cupHead.getHearts());
         new CupHeadBlinkAnimation().play();
         if (checkForLose()) {
             GameMenu.addEndBox(false);
